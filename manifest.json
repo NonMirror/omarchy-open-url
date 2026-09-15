@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "nonmirror.open-url",
+  "name": "Open URL",
+  "version": "1.0.0",
+  "author": "nonmirror",
+  "description": "Type or paste a link and open it in the default browser",
+  "kinds": [
+    "overlay"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "overlay": "OpenUrl.qml"
+  }
+}
