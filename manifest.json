@@ -3,7 +3,8 @@
   "id": "nonmirror.open-url",
   "name": "Open URL",
   "version": "1.0.0",
-  "author": "nonmirror",
+  "author": "NonMirror",
+  "license": "MIT",
   "description": "Type or paste a link and open it in the default browser",
   "kinds": [
     "overlay"

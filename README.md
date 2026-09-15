@@ -37,6 +37,17 @@ Summon it with `Ctrl+Shift+W`, type a URL or a fragment of one, press Enter.
 - [Omarchy](https://omarchy.org/)
 - The `omarchy-shell` (Quickshell) host
 
+## Dependencies
+
+- `omarchy-launch-browser` (shipped with Omarchy) opens the link and focuses an
+existing browser window. The plugin falls back to `xdg-open` (from
+`xdg-utils`) if the helper is missing.
+- A Hyprland binding to summon the plugin (see below). Without one, it can still
+be opened with `omarchy-shell shell toggle nonmirror.open-url`.
+
+No packages are installed, no network access is used by the plugin itself, and
+nothing runs with elevated privileges.
+
 ## Installation
 
 ```bash
@@ -48,6 +59,15 @@ Or install by hand:
 1. Put this directory at `~/.config/omarchy/plugins/nonmirror.open-url/`.
 2. `omarchy-shell shell rescanPlugins`
 3. `omarchy plugin enable nonmirror.open-url`
+
+## Removal
+
+```bash
+omarchy plugin remove nonmirror.open-url
+```
+
+Removing the plugin leaves the cache file in place; delete
+`~/.local/state/omarchy/open-url-history.json` if you also want to clear it.
 
 ## Keybinding
 
@@ -130,3 +150,7 @@ not replace the kept instance).
 ```bash
 node -e 'const U = require("./Url.js"); console.log(U.normalizeUrl("nonmirror.icu"))'
 ```
+
+## License
+
+[MIT](LICENSE) © NonMirror
