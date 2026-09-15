@@ -6,13 +6,7 @@ so the sites you actually use are only a few keystrokes away.
 
 Summon it with `Ctrl+Shift+W`, type a URL or a fragment of one, press Enter.
 
-```
-┌ Open URL… ──────────────────────────┐
-│  🌐 nonmirror.icu        just now   │
-│  🌐 github.com           2h ago     │
-│  🌐 archlinux.org        3d ago     │
-└─────────────────────────────────────┘
-```
+![Open URL overlay: "nonm" typed with a cached suggestion for nonmirror.icu](preview.png)
 
 ## Features
 
